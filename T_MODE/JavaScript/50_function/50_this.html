@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <h4>this 關鍵字代表什麼值，取決於你在哪裡使用它</h4>
+  <p><a href="https://www.w3schools.com/js/js_this.asp" target="_blank">The JavaScript <b>this</b> Keyword</a></p>
+
+  <button onclick="apple(this)">按鈕</button>
+
+  <script>
+
+    // // 10. Alone, this refers to the global object.
+    // console.log(this);
+    // console.log(window);
+
+    // 20. In a method, this refers to the owner object.
+    var s1 = {
+      html: 100,
+      css: 90,
+      getTotalScore: function(){
+        var result = this.html + this.css;
+        console.log(result);
+      }
+    }
+    s1.getTotalScore();
+
+    // 30. In an event, this refers to the element that received the event.
+    function apple(dog){
+      console.log(dog); //
+    }
+  </script>
+
+</body>
+
+</html>

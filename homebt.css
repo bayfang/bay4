@@ -1,0 +1,5 @@
+ul,li{ padding:0; overflow:hidden;margin:0;position: relative;left: 100px;top:50px;}
+li{ list-style:none;}
+img{ border:0;}
+.season_2{ width:1000px;display: none;}
+.season_2 li{ float:left; width:200px; height:500px;margin-right:5px; opacity: 0.8;}

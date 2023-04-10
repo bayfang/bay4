@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h4>JavaScript Date Objects</h4>
+    <p><a href="https://www.w3schools.com/js/js_dates.asp">https://www.w3schools.com/js/js_dates.asp</a></p>
+    <h4>JavaScript Get Date Methods</h4>
+    <p><a href="https://www.w3schools.com/js/js_date_methods.asp">https://www.w3schools.com/js/js_date_methods.asp</a>
+    </p>
+    <hr>
+    <pre>
+    生成日期物件的方法：
+        new Date()
+        new Date(milliseconds)
+        new Date(dateString)
+        new Date(year, month, day, hours, minutes, seconds, milliseconds)
+    </pre>
+
+    <script>
+        // 宣告一個日期物件
+        var dog = new Date();
+        console.log(dog);
+
+        // 取得年份
+        console.log(dog.getFullYear()); // 2022
+
+        // 取得月份 (請注意這裡)
+        console.log(dog.getMonth() + 1); // 9
+
+        // 取得日期
+        console.log(dog.getDate());
+
+        // 取得星期 (請注意這裡)
+        console.log(dog.getDay());
+
+        // 取得時間
+        console.log(dog.getHours());
+
+        // 取得分鐘
+        console.log(dog.getMinutes());
+
+
+        // 製造 2022/9/25 星期天出來。
+        var apple = new Date(2022, 8, 25);
+        console.log(apple);            // Sun Sep 25 2022 00:00:00 GMT+0800 (台北標準時間)
+        console.log(apple.getDay());   // 0
+        console.log(apple.getDate());  // 25
+        // 製造 2022/9/25 星期天出來。
+
+
+        // 若日期物件生成後 ， 我們需要加一天
+        // 明天 = 今天 + 1
+        var cat = new Date();
+        cat.setDate(cat.getDate() + 1);
+
+        console.clear();
+        // 若日期物件生成後 ， 我們需要加一個月
+        cat.setMonth(cat.getMonth() + 1);
+        console.log(cat);
+
+
+        // 小練習：如何透過日期的加減，取得這個月的最後一天?
+        // 這個月的最後一天 = 下個月的一號  減  一
+
+        // 方法1: 下個月的一號  減  一
+        var bee = new Date();
+        bee.setDate(1);                   //  9/1
+        bee.setMonth(bee.getMonth() + 1); // 10/1
+        bee.setDate(bee.getDate() - 1);   //  9/30
+        console.log(bee);
+
+        // 方法2:
+        var x = new Date(); // 現在
+        var y = new Date(x.getFullYear(), x.getMonth() + 1, 0); // 指定的某一天
+        console.log(y);
+
+
+        // 小練習：宣告兩個日期物件，並指定日期後，進行日期相減
+        // millisecond = 86400000 = 1000*60*60*24
+        console.clear();
+        var a = new Date(); // 今天
+        var b = new Date("2022/10/14"); // 小專發表日
+        var diff = b-a;
+        console.log(  diff/86400000  ); // 15.5 天
+    </script>
+
+</body>
+
+</html>

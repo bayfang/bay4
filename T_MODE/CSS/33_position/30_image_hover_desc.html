@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 10. 請試著加入 css  */
+        /*      讓文字在滑鼠經過時才顯示 */
+
+        img {
+            width: 500px;
+        }
+
+        .desc {
+            /* 1. 加入文字的背景顏色 */
+            background-color: red;
+            font-size: 72px;
+            /* 2. 將圖片和文字重疊再一起 */
+            position: absolute;
+            top: 200px;
+            /* 3. 隱藏文字 */
+            visibility: hidden;
+        }
+
+        figure { 
+            position: relative; 
+        }
+
+        /* 4. 滑鼠經過圖片的時候顯示文字 */
+        figure:hover>.desc {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <figure>
+        <img src="img/sunny.JPG">
+        <figcaption class="desc">千陽號海上行</figcaption>
+    </figure>
+
+</body>
+
+</html>

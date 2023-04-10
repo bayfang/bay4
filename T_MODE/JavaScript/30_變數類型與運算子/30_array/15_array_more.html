@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+
+        // 10. 宣告一個陣列 a ， 存放 1,2,3,4,5,6
+        // 20. 宣告另外一個陣列 b ， 讓 b = a
+        // 30. 取得 b 第一個位置的值
+        // 40. 修改 b 第一個位置的值
+        // 50. 將 a 列印出來查看
+        var a = [1, 2, 3, 4, 5, 6];
+        var b = a;
+        console.log(b[0]); // 1
+        b[0] = 999;
+        console.log(b); // 999, 2, 3, 4, 5, 6
+        console.log(a); // 999, 2, 3, 4, 5, 6
+
+        var x = 5;
+        var y = x;
+        y = 999;
+        console.log(x); // 5 | 999
+
+
+    </script>
+</body>
+
+</html>

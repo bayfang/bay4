@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <h4>JavaScript Objects</h4>
+  <p><a
+      href="https://www.w3schools.com/js/js_object_definition.asp">https://www.w3schools.com/js/js_object_definition.asp</a>
+  </p>
+
+  <script>
+    // 10. 使用 {} create object
+    //      object 可以包含屬性和方法
+    //     { key1:value1, key2:value2.. }
+    //     { 屬性1:值1,   屬性2:值2.. }
+    var sname = "皮卡丘";
+    var sphone = "0911222333";
+
+    var s1 = {
+      sname: "皮卡丘",
+      sphone: "0911222333"
+    };
+    console.log(s1);
+    console.log(s1.sphone);
+
+    // 30. 透過 .  取得 | 新增 object 的屬性
+    s1.sqhone = "0966777888";
+    console.log(s1);
+
+    // 40. 透過 [] 取得 | 新增 object 的屬性
+    console.log(   s1["sphone"]  ); // 0911222333
+
+    s1["cat"] = "0988999000";
+    console.log(s1);
+  </script>
+
+</body>
+
+</html>

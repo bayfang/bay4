@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(./bk_1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-position: center; */
+        }
+
+        #staruo {
+            opacity: 0.6;
+            display: flex;
+            position: absolute;
+            top: 10%;
+            left: 30%;
+        }
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/jacascript" src="turn.js"></script>
+    <link rel="stylesheet" href="homebt.css">
+    <title>Document</title>
+    </script>
+</head>
+
+<body>
+
+    <ul class="season_2">
+        <li><a href="./sss1.html"><img src="s1.jpg" width="200" height="500" ></a></li>
+        <li><a href="./sss2.html"><img src="s2.jpg" width="200" height="500" ></a></li>
+        <li><a href="./sss3.html"><img src="s3.jpg" width="200" height="500" ></a></li>
+        <li><a href="./sss4.html"><img src="s4.jpg" width="200" height="500" ></a></li>
+    </ul>
+
+    <img src="./star2.png" style="width: 40%;" id="staruo" onclick="sttr()">
+    <script>
+        function b() {$(".season_2").fadeIn("slow");}
+        function a() { $("#staruo").fadeOut("slow"); }
+        function sttr() {
+             a();b();
+        }
+    </script>
+</body>
+
+</html>

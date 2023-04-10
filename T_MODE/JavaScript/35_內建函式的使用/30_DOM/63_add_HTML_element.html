@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button onclick="bee()">點一下增加一張</button>
+    <hr>
+    <script>
+        function bee() {
+            // 20. createElement 增加一個元素 (img)
+            // 21. setAttribute  設定新增元素的屬性
+            // 22. appendChild   直接在Html文件中增加元素
+
+            var apple = document.createElement('img'); // <img>
+
+            var temp = ["./find.png", "./like.png"];
+            var rdm = Math.floor(Math.random() * 2);
+            apple.setAttribute("src", temp[rdm]);     // <img src=隨機獲得>
+
+            // apple.setAttribute("id", "pikachu");
+            document.body.appendChild(apple);
+        }
+
+        // // (O)
+        setInterval(bee, 1000);
+
+        // // (X)
+        // setInterval(bee(), 1000);
+    </script>
+
+</body>
+
+</html>

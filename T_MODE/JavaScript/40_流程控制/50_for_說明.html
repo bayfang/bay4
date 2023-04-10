@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h4>JavaScript For Loop</h4>
+    <p><a href='https://www.w3schools.com/js/js_loop_for.asp'>https://www.w3schools.com/js/js_loop_for.asp</a></p>
+
+    <pre>
+
+        for (statement 1; statement 2; statement 3) {
+            // code block to be executed
+        }
+
+        ---
+        while(){ }: 不知道
+          for(){ }: 次數
+        ---
+        數字
+        字串
+        ---
+
+    </pre>
+
+    <script>
+
+        // 10. for 結構說明
+
+        // // v1. 最常見的
+        // for( 宣告變數; 條件; 累進值|步進值|?++ ){ 要做的事情 }
+        // for (var apple = 0; apple < 10; apple++) {
+        //     // 20. break 和 continue 關鍵字
+            
+        //     if (apple % 2 == 0) {
+        //         continue; // 跳過這"一次"不做
+        //     }
+        //     if (apple == 7) {
+        //         break;    // 離開
+        //     }
+
+        //     console.log(apple);
+        // }
+
+        // // v2. 無窮迴圈
+        // for(;;){
+        //     console.log('皮卡丘');
+        // }
+        
+        // v3. ?
+        function apple(){
+            console.log('A');
+        }
+        function bee(){
+            console.log('B');
+        }
+
+        var cat = 0;
+        for(apple(); cat < 3; bee()){
+            cat++;
+        }
+
+
+    </script>
+</body>
+
+</html>

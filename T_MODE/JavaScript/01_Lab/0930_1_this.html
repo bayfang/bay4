@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+  <button onclick="cat('1')">1</button>
+  <button onclick="cat('2')">2</button>
+  <button onclick="cat('3')">3</button>
+
+  <button onclick="dog(this)">4</button>
+  <button onclick="dog(this)">5</button>
+  <button onclick="dog(this)">6</button>
+  <hr>
+  <h1 id="result"></h1>
+  <script>
+    function dog(obj){
+        document.getElementById('result').innerText += obj.innerText;
+    }
+    function cat(num){
+        document.getElementById('result').innerText += num;
+    }
+  </script>
+</body>
+</html>

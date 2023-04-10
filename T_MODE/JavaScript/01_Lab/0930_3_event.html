@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <button id="pikachu">皮卡丘-v2</button>
+    <button id="pudding">胖丁-v2</button>
+
+    <script>
+        function apple(){
+            console.log('a');
+        }
+
+        function bee(){
+            console.log('beeeee');
+        }
+
+        // (O)
+        document.getElementById('pikachu').addEventListener('click', apple);
+        document.getElementById('pikachu').addEventListener('click', bee);
+
+        // (X) 立刻馬上執行了。
+        // document.getElementById('pikachu').addEventListener('click', apple())
+
+        // (X) 會後蓋前，最後只留下 bee
+        // pikachu.onclick = apple;
+        // pikachu.onclick = bee;
+
+        // (X) 立刻馬上執行了。
+        // pikachu.onclick = apple();
+    </script>
+
+</body>
+
+</html>

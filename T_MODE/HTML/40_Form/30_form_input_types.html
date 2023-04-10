@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- 10. 製作一份表單-->
+    <!--   a. 標題：通勤工具使用調查-->
+    <h3>通勤工具使用調查</h3>
+    <!--   b. 在<body>裡面放入一個表單<form>-->
+    <!--   c. 在<form>表單內 加入 
+                <fieldset> 群組標籤 和 
+                <legend> 並給予說明  -->
+    <!--   d. 在表單<form>內加入 
+              姓名 輸入欄位<input type="text">-->
+    <!--   e. 在表單<form>內加入 
+              電話 輸入欄位<input type="text">-->
+              
+    <!-- 20. 加入 職業 <input type="radio">-->
+    <!--  id：識別某個HTML文件上的元素-->
+    <!--  class：HTML標籤的分組-->
+    <!--  name：為radio、checkbox的分組；
+                伺服器端根據name取得值-->
+
+    <!-- 30. 加入 年紀 <input type="radio">、
+              交通工具 <input type="checkbox"> ，
+              步驟和 20 類似 -->
+
+    <form>
+        <fieldset>
+            <legend>基本資料</legend>
+            <label for="userName">姓名：</label>
+            <input id="userName" type="text">
+            <br>
+            <label for="userPhone">電話：</label>
+            <input id="userPhone" type="text">
+        </fieldset>
+
+        <span>職業：</span>
+        <input name="job" id="student" type="radio" value="student">
+        <label for="student">學生</label>
+        <input name="job" id="teacher" type="radio">
+        <label for="teacher">教師</label>
+        <input name="job" id="jobother" type="radio">
+        <label for="jobother">其他</label>
+        <br>
+
+        <span>年紀：</span>
+        <input type="radio" name="age"> 20 - 29
+        <input type="radio" name="age"> 30 - 39
+        <input type="radio" name="age"> 40 - 49
+        <input type="radio" name="age"> 50以上
+
+        <br>
+        
+        <span>交通工具：</span>
+        <input type="checkbox" name="vehicle" id="bike" value="bike"> <label for="bike">腳踏車</label>
+        <input type="checkbox" name="vehicle" id="motorcycle" value="motorcycle"> <label for="motorcycle">機車</label>
+        <input type="checkbox" name="vehicle" id="boat" value="boat"> <label for="boat">船</label>
+        <input type="checkbox" name="vehicle" id="vehicleother" value="other"> <label for="vehicleother">其他</label>
+    </form>
+
+</body>
+
+</html>
